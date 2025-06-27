@@ -1,7 +1,7 @@
 coder:
   image:
     repository: ghcr.io/coder/coder
-    tag: "2.22.1"
+    tag: "v2.23.1"
   service:
     type: LoadBalancer
     port: 7080
