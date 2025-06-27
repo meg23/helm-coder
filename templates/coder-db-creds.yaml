@@ -4,7 +4,4 @@ metadata:
   name: coder-db-creds
 type: Opaque
 stringData:
-  username: {{ randAlphaNum 8 | quote }}
-  password: {{ randAlphaNum 20 | quote }}
-  database: {{ randAlphaNum 10 | quote }}
-
+  postgres-password: {{ randAlphaNum 20 | quote }}
