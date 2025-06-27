@@ -1,0 +1,11 @@
+apiVersion: v2
+name: coder-full
+description: Deploy Coder + PostgreSQL in one chart with dynamic credentials
+type: application
+version: 0.1.0
+appVersion: "2.22.1"
+
+dependencies:
+  - name: postgresql
+    version: 12.9.2
+    repository: https://charts.bitnami.com/bitnami

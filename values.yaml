@@ -1,0 +1,18 @@
+coder:
+  image:
+    repository: ghcr.io/coder/coder
+    tag: "2.22.1"
+  service:
+    type: LoadBalancer
+    port: 7080
+  accessURL: ""
+  resources: {}
+  env: []
+
+postgresql:
+  auth:
+    existingSecret: coder-db-creds
+  primary:
+    persistence:
+      enabled: true
+      size: 10Gi
